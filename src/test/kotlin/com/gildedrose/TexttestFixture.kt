@@ -1,19 +1,14 @@
 package com.gildedrose
 
-//import com.gildedrose.v1.GildedRose
-//import com.gildedrose.v1.Item
-
-import com.gildedrose.v2.GildedRose
-import com.gildedrose.v2.model.Item
+import com.gildedrose.v1.Item
+import com.gildedrose.v3.gildedrose.GildedRose
 
 fun main(args: Array<String>) {
 
-    println("OMGHAI!")
-
-    val items = arrayOf(Item("+5 Dexterity Vest", 10, 20), //
-            Item("Aged Brie", 2, 0), //
-            Item("Elixir of the Mongoose", 5, 7), //
-            Item("Sulfuras, Hand of Ragnaros", 0, 80), //
+    val items = arrayOf(Item("+5 Dexterity Vest", 10, 20),
+            Item("Aged Brie", 2, 0),
+            Item("Elixir of the Mongoose", 5, 7),
+            Item("Sulfuras, Hand of Ragnaros", 0, 80),
             Item("Sulfuras, Hand of Ragnaros", -1, 80),
             Item("Backstage passes to a TAFKAL80ETC concert", 15, 20),
             Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
@@ -23,20 +18,13 @@ fun main(args: Array<String>) {
 
     val app = GildedRose(items)
 
-    var days = 2
-    if (args.size > 0) {
-        days = Integer.parseInt(args[0]) + 1
-    }
+    println("-------- day 1 --------")
+    app.items.forEach { item -> println(item) }
+    println()
+    app.updateQuality()
+    println("-------- day 2 --------")
+    app.items.forEach { item -> println(item) }
 
-    for (i in 0..days - 1) {
-        println("-------- day $i --------")
-        println("name, sellIn, quality")
-        for (item in items) {
-            println(item)
-        }
-        println()
-        app.updateQuality()
-    }
 
 
 }

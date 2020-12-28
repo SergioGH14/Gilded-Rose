@@ -14,6 +14,8 @@ repositories {
 dependencies {
 	implementation(kotlin("stdlib"))
 	testImplementation("org.junit.jupiter:junit-jupiter:5.6.2")
+	implementation("org.apache.commons:commons-lang3:3.7")
+	implementation("org.slf4j:slf4j-api:1.7.30")
 }
 
 tasks.test {

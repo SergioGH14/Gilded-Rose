@@ -13,6 +13,8 @@ val SULFURA:String get() = "sulfuras"
 
 val BACKSTAGE:String get() = "backstage"
 
+val CONJURED:String get() = "conjured"
+
 val Item.type: ItemType
     get() = when {
         name.toLowerCase().contains(AGED_BRIE) -> ItemType.AGED_BRIE
