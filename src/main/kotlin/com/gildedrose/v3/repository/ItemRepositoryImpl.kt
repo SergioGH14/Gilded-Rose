@@ -1,4 +1,4 @@
-package com.gildedrose.v3.domain.repository
+package com.gildedrose.v3.repository
 
 import com.gildedrose.v3.domain.entity.Item
 import com.gildedrose.v3.domain.vo.Name

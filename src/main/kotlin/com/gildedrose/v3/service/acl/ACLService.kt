@@ -3,7 +3,7 @@ package com.gildedrose.v3.service.acl
 import com.gildedrose.v3.domain.command.CreateItemCommand
 import com.gildedrose.v3.domain.command.UpdateAllItemsCommand
 import com.gildedrose.v3.domain.entity.*
-import com.gildedrose.v3.domain.repository.ItemRepositoryImpl
+import com.gildedrose.v3.repository.ItemRepositoryImpl
 import com.gildedrose.v3.domain.vo.Quality
 import com.gildedrose.v3.service.item.ItemService
 import com.gildedrose.v3.service.item.ItemServiceImpl

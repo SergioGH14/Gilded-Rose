@@ -7,4 +7,9 @@ class Conjured(command: CreateItemCommand) : Item(command) {
         super.updateQuality()
         super.updateQuality()
     }
+
+    override fun expireQuality() {
+        super.expireQuality()
+        super.expireQuality()
+    }
 }
